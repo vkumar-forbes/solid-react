@@ -1,1 +1,1 @@
-# solid-react
+# Solid Principles in React
