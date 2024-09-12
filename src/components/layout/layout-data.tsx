@@ -1,7 +1,6 @@
 import { SidebarAward, SidebarStar, SidebarThumbsUp } from "@/assets/icons";
-import { SidebarItemType } from "@/layout-v2";
 
-const sidebarItems = [
+export default [
   {
     Icon: SidebarStar,
     heading: "Data-Driven Insights",
@@ -19,6 +18,4 @@ const sidebarItems = [
     caption:
       "We tailor our recommendations based on what's most important to each borrower. Join the thousands of borrowers who trust Forbes Advisor for their loan needs.",
   },
-] as SidebarItemType[];
-
-export default sidebarItems;
+] as const;

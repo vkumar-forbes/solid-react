@@ -1,14 +1,20 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import StepLayout from "@/components/step-layout";
-import App from "./App.tsx";
+import Layout from "./components/layout/index.tsx";
 
 import "@/styles/globals.css";
+import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <StepLayout>
+    <Layout
+      currentStep={1}
+      totalStep={3}
+      isEmptyLayout={false}
+      navigateBack={() => console}
+      sidebarTitle="Why Choose Us?"
+    >
       <App />
-    </StepLayout>
+    </Layout>
   </StrictMode>
 );
